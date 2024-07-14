@@ -91,6 +91,10 @@ class Login extends Component {
             </button>
             <p className="error-msg">{errorMsg}</p>
           </form>
+          <h1m className="developed-title">
+            {' '}
+            Crafted By Mr.Gaddi Rakesh Karthik
+          </h1m>
         </div>
       </div>
     )
