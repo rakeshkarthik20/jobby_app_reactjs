@@ -1,0 +1,112 @@
+.similar-card-container {
+  background-color: #272727;
+  border-radius: 10px;
+  margin-right: 45px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  width: 450px;
+}
+.similar-card-sub-container {
+  margin: 30px;
+}
+.similar-logo-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.similar-logo-image {
+  width: 85px;
+  height: 85px;
+}
+.similar-title-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 25px;
+}
+.similar-title {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+.similar-rating-container {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+}
+.similar-description-heading {
+  font-size: 30px;
+}
+.similar-description {
+  font-size: 24px;
+}
+.similar-loc-type-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.similar-sub-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon-image {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .similar-card-container {
+    background-color: #272727;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    max-width: 325px;
+    padding-left: 0px;
+  }
+  .similar-card-sub-container {
+    margin: 18px;
+  }
+  .similar-logo-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .similar-logo-image {
+    width: 75px;
+    height: 75px;
+  }
+  .similar-title-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+  .similar-title {
+    margin-top: 10px;
+    margin-bottom: 3px;
+    font-size: 20px;
+  }
+  .similar-rating-container {
+    display: flex;
+    align-items: center;
+  }
+  .similar-description-heading {
+    font-size: 22px;
+  }
+  .similar-description {
+    font-size: 17px;
+  }
+  .similar-loc-type-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .similar-sub-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .icon-image {
+    font-size: 30px;
+  }
+}

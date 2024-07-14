@@ -1,0 +1,89 @@
+.user-profile-container {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  font-family: 'Roboto';
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+.user-name {
+  color: #6366f1;
+  font-size: 20px;
+}
+.user-bio {
+  color: #2c364c;
+  font-weight: 500;
+  font-size: 15px;
+}
+.user-details {
+  margin-left: 30px;
+  width: 260px;
+}
+.retry-button {
+  background-color: #6366f1;
+  border: 0px;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.profile-failure-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 33vh;
+}
+.loader-container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 33vh;
+}
+
+@media screen and (max-width: 768px) {
+  .user-profile-container {
+    align-items: flex-start;
+    height: 29vh;
+  }
+  .user-name {
+    color: #6366f1;
+    font-size: 22px;
+  }
+  .user-bio {
+    color: #2c364c;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .user-details {
+    margin-left: 25px;
+    width: 300px;
+  }
+  .retry-button {
+    background-color: #6366f1;
+    border: 0px;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 4px;
+    font-weight: 500;
+  }
+  .profile-failure-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 33vh;
+  }
+  .loader-container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 33vh;
+  }
+}

@@ -1,0 +1,151 @@
+.job-card-container {
+  /* margin-bottom: 10px; */
+  margin-right: 20px;
+  background-color: #272727;
+  border-radius: 10px;
+}
+.job-logo-container {
+  display: flex;
+}
+.job-title-container {
+  margin-left: 25px;
+}
+.job-title {
+  margin-bottom: 0px;
+}
+.job-logo-image {
+  width: 65px;
+  height: 65px;
+  margin-top: 20px;
+}
+.start-icon {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #fbbf24;
+}
+.icon-image {
+  margin-right: 5px;
+  font-size: 25px;
+}
+.job-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.job-details-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.loc-type-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.job-sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.job-card-sub-container {
+  margin: 25px;
+}
+.location {
+  margin-left: 3px;
+  margin-right: 20px;
+  font-size: 15px;
+}
+.employment {
+  margin-left: 6px;
+  font-size: 15px;
+}
+.rating {
+  font-weight: 500;
+}
+.package {
+  font-size: 24px;
+  font-weight: 500;
+}
+.separator {
+  color: #475569;
+}
+.description-heading {
+  font-size: 20px;
+}
+.description-container {
+  line-height: 1.5;
+}
+.job-description {
+  padding-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .job-card-container {
+    margin-right: 20px;
+    background-color: #272727;
+    border-radius: 10px;
+  }
+  .job-logo-container {
+    display: flex;
+  }
+  .job-title-container {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+  }
+  .job-title {
+    margin-bottom: 0px;
+    font-size: 20px;
+  }
+  .job-logo-image {
+    width: 65px;
+    height: 65px;
+    margin-top: 20px;
+  }
+  .start-icon {
+    margin-right: 5px;
+    font-size: 18px;
+  }
+  .icon-image {
+    margin-right: 2px;
+    font-size: 8px;
+  }
+  .job-rating-container {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .job-card-sub-container {
+    margin: 18px;
+  }
+  .location {
+    margin-left: 1px;
+    margin-right: 25px;
+    font-size: 14px;
+  }
+  .employment {
+    margin-left: 4px;
+    font-size: 14px;
+  }
+  .rating {
+    font-weight: 500;
+  }
+  .package {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .separator {
+    color: #475569;
+  }
+  .description-heading {
+    font-size: 19px;
+  }
+  .description-container {
+    line-height: 1.5;
+  }
+  .job-description {
+    padding-bottom: 40px;
+    font-size: 14px;
+  }
+}
