@@ -7,10 +7,12 @@ class Login extends Component {
   state = {username: '', password: '', errorMsg: ''}
 
   onChangeUsername = event => {
+    console.log(event.target.value)
     this.setState({username: event.target.value})
   }
 
   onChangePassword = event => {
+    console.log(event.target.value)
     this.setState({password: event.target.value})
   }
 
@@ -28,32 +30,18 @@ class Login extends Component {
   SubmitForm = async event => {
     event.preventDefault()
     const {username, password} = this.state
-
-    // Check for specific credentials
-    /* 
-    The first part of the if statement checks if the entered credentials are 'rakesh' and 'rakesh@20'.
-    If they are, it simulates a successful login by calling onSuccessLogin with a dummy token.
-    If the credentials do not match, the code proceeds to make an actual API call
-    to validate the entered credentials against the server's database.
-    */
-    if (username === 'rakesh' && password === 'rakesh@20') {
-      // Simulate successful login response
-      const jwtToken = 'dummy-jwt-token'
-      this.onSuccessLogin(jwtToken)
+    const url = 'https://apis.ccbp.in/login'
+    const options = {
+      method: 'POST',
+      body: JSON.stringify({username, password}),
+    }
+    const response = await fetch(url, options)
+    const data = await response.json()
+    if (response.ok) {
+      this.onSuccessLogin(data.jwt_token)
     } else {
-      const url = 'https://apis.ccbp.in/login'
-      const options = {
-        method: 'POST',
-        body: JSON.stringify({username, password}),
-      }
-      const response = await fetch(url, options)
-      const data = await response.json()
-
-      if (response.ok) {
-        this.onSuccessLogin(data.jwt_token)
-      } else {
-        this.onFailureLogin(data.error_msg)
-      }
+      this.onFailureLogin(data.error_msg)
+      //   console.log(data.error_msg)
     }
   }
 
@@ -103,9 +91,6 @@ class Login extends Component {
             </button>
             <p className="error-msg">{errorMsg}</p>
           </form>
-          <h1 className="developed-title">
-            Crafted By [ Mr.Gaddi Rakesh Karthik ]
-          </h1>
         </div>
       </div>
     )

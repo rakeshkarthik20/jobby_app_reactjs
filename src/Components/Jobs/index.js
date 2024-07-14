@@ -243,7 +243,7 @@ class Jobs extends Component {
                 className="search-btn"
                 data-testid="searchButton"
                 onClick={this.searchJob}
-                label="search-button"
+                label="search-btn"
               >
                 <BsSearch className="search-icon" />
               </button>
@@ -313,7 +313,7 @@ class Jobs extends Component {
                 className="search-btn"
                 data-testid="searchButton"
                 onClick={this.searchJob}
-                label="search-button"
+                label="search-btn"
               >
                 <BsSearch className="search-icon" />
               </button>
